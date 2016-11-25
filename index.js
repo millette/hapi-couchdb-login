@@ -6,6 +6,9 @@ const _ = require('lodash')
 const pify = require('pify')
 const nano = require('cloudant-nano')
 
+// self
+const pkg = require('./package.json')
+
 exports.register = (server, options, next) => {
   const db = nano(options.db.url)
   const auth = pify(db.auth, { multiArgs: true })
@@ -158,11 +161,7 @@ exports.register = (server, options, next) => {
   next()
 }
 
-/*
 exports.register.attributes = {
-  name: 'login',
+  name: pkg.name,
   dependencies: ['hapi-boom-decorators', 'hapi-auth-cookie']
 }
-*/
-
-exports.register.attributes = { pkg: require('./package.json') }
