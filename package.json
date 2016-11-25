@@ -1,0 +1,49 @@
+{
+  "name": "hapi-couchdb-login",
+  "version": "0.0.0",
+  "description": "CouchDB Login plugin for HapiJS.",
+  "main": "index.js",
+  "repository": "millette/hapi-couchdb-login",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info",
+    "url": "http://robin.millette.info"
+  },
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "standard && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "rollodeqc",
+    "github",
+    "gh",
+    "user",
+    "username",
+    "info"
+  ],
+  "dependencies": {
+    "boom": "^4.2.0",
+    "cloudant-nano": "^6.4.1",
+    "hapi-auth-cookie": "^6.1.1",
+    "hapi-boom-decorators": "^2.1.0",
+    "lodash": "^4.17.2",
+    "pify": "^2.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-eslint": "^7.0.0",
+    "coveralls": "^2.11.14",
+    "nyc": "^8.3.0",
+    "standard": "^8.2.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
