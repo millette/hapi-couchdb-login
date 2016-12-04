@@ -1,6 +1,6 @@
 {
   "name": "hapi-couchdb-login",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "CouchDB Login plugin for HapiJS.",
   "main": "index.js",
   "repository": "millette/hapi-couchdb-login",
