@@ -1897,9 +1897,9 @@ hapi-auth-cookie@^6.1.1:
     hoek "3.x.x"
     joi "7.x.x"
 
-hapi-boom-decorators@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/hapi-boom-decorators/-/hapi-boom-decorators-2.2.1.tgz#0d6a4e1556dbf05a8deb962f6dc24fd448cf2b00"
+hapi-boom-decorators@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/hapi-boom-decorators/-/hapi-boom-decorators-2.2.2.tgz#6ab6ac2468f7be0d1235335b8ddb70fd4c54bae1"
   dependencies:
     boom "^4.2.0"
 
