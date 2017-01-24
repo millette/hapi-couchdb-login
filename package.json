@@ -19,29 +19,28 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
-    "cli-app",
-    "cli",
-    "rollodeqc",
-    "github",
-    "gh",
     "user",
-    "username",
-    "info"
+    "login",
+    "authentication",
+    "couchdb",
+    "hapijs",
+    "hapi"
   ],
   "dependencies": {
+    "hapi": "^16.1.0",
     "boom": "^4.2.0",
     "cloudant-nano": "^6.4.1",
     "hapi-auth-cookie": "^6.1.1",
     "hapi-boom-decorators": "^2.2.2",
-    "lodash": "^4.17.2",
+    "lodash": "^4.17.4",
     "pify": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "babel-eslint": "^7.0.0",
-    "coveralls": "^2.11.14",
-    "nyc": "^8.3.0",
-    "standard": "^8.2.0"
+    "ava": "^0.17.0",
+    "babel-eslint": "^7.1.1",
+    "coveralls": "^2.11.15",
+    "nyc": "^10.1.2",
+    "standard": "^8.6.0"
   },
   "standard": {
     "parser": "babel-eslint"
