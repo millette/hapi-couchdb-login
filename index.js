@@ -123,7 +123,7 @@ exports.register = (server, options, next) => {
 
   server.register(exports.register.attributes.dependencies.map((dep) => require(dep)), (err) => {
     if (err) { throw err }
-    const cache = server.cache({ segment: 'sessions', expiresIn: 3 * 24 * 60 * 60 * 1000 })
+    const cache = server.cache({ segment: 'sessions', expiresIn: 30 * 24 * 60 * 60 * 1000 })
     server.app.cache = cache
     server.auth.strategy('session', 'cookie', 'try', {
       password: options.cookie.password,
